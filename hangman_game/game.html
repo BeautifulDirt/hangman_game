@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Виселица в Париже</title>
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<body>
+		<h1>Виселица: увидеть Париж и умереть</h1>
+
+		<canvas id="canvas" width=500 height=500></canvas>
+
+		<input type="button" id="tip" value="Как играть?" onClick="alert('Виселица в Париже!\nВам необходимо отгадать буквы в зашифрованном слове на тему: <Париж> за ограниченное количество попыток. На фоне парижских достопримечательностей, который находится слева в окне браузера, будет поэтапно появляться висельник с каждой неверно выбранной Вами буквы. У Вас есть 6 попыток, чтобы спасти жизнь человека от повешения! В игре также предусмотрены подсказки, одна из которых находится слева от зашифорованного слова. Выбор букв русского алфавита осуществляется путем нажатия кнопок, представленых упорядоченно в виде сетки на экране браузера.')">
+
+		<div>
+			<!--подсказка-->
+			<span id="placeForText"></span>
+
+			<!--результат игры-->
+		  	<input type="text" id="result" name="result"/><br />
+
+		  	<!--кнопки-->
+		 	<input type="button" id="а" value="а" onClick="javascript:daivalue('а')">
+		 	<input type="button" id="б" value="б" onClick="javascript:daivalue('б')">
+		 	<input type="button" id="в" value="в" onClick="javascript:daivalue('в')">
+		 	<input type="button" id="г" value="г" onClick="javascript:daivalue('г')">
+		 	<input type="button" id="д" value="д" onClick="javascript:daivalue('д')">
+		 	<input type="button" id="е" value="е" onClick="javascript:daivalue('е')">
+		 	<input type="button" id="ж" value="ж" onClick="javascript:daivalue('ж')">
+		 	<input type="button" id="з" value="з" onClick="javascript:daivalue('з')">
+		 	<br>
+		 	<input type="button" id="и" value="и" onClick="javascript:daivalue('и')">
+		 	<input type="button" id="й" value="й" onClick="javascript:daivalue('й')">
+		 	<input type="button" id="к" value="к" onClick="javascript:daivalue('к')">
+		 	<input type="button" id="л" value="л" onClick="javascript:daivalue('л')">
+		 	<input type="button" id="м" value="м" onClick="javascript:daivalue('м')">
+		 	<input type="button" id="н" value="н" onClick="javascript:daivalue('н')">
+		 	<input type="button" id="о" value="о" onClick="javascript:daivalue('о')">
+		 	<input type="button" id="п" value="п" onClick="javascript:daivalue('п')">
+		 	<br>
+		 	<input type="button" id="р" value="р" onClick="javascript:daivalue('р')">
+		 	<input type="button" id="с" value="с" onClick="javascript:daivalue('с')">
+		 	<input type="button" id="т" value="т" onClick="javascript:daivalue('т')">
+		 	<input type="button" id="у" value="у" onClick="javascript:daivalue('у')">
+		 	<input type="button" id="ф" value="ф" onClick="javascript:daivalue('ф')">
+		 	<input type="button" id="х" value="х" onClick="javascript:daivalue('х')">
+		 	<input type="button" id="ц" value="ц" onClick="javascript:daivalue('ц')">
+		 	<input type="button" id="ч" value="ч" onClick="javascript:daivalue('ч')">
+		 	<br>
+		 	<input type="button" id="ш" value="ш" onClick="javascript:daivalue('ш')">
+		 	<input type="button" id="щ" value="щ" onClick="javascript:daivalue('щ')">
+		 	<input type="button" id="ъ" value="ъ" onClick="javascript:daivalue('ъ')">
+		 	<input type="button" id="ы" value="ы" onClick="javascript:daivalue('ы')">
+		 	<input type="button" id="ь" value="ь" onClick="javascript:daivalue('ь')">
+		 	<input type="button" id="э" value="э" onClick="javascript:daivalue('э')">
+		 	<input type="button" id="ю" value="ю" onClick="javascript:daivalue('ю')">
+		 	<input type="button" id="я" value="я" onClick="javascript:daivalue('я')">
+	 	</div>
+		<script type="text/javascript" src="game.js"></script>
+	</body>
+</html>
